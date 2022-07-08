@@ -17,5 +17,6 @@ def sex():
       try:print("lolled > " + str(src.json())) 
       except:print("lolled > " + str(src.status_code))
 
-for x in range(5): import threading;threading.Thread(target=sex).start()```
+for x in range(5): import threading;threading.Thread(target=sex).start()
+```
 spam this ^^^
